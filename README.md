@@ -20,8 +20,8 @@
   - Remover colunas que não são pertinentes para a analise
   - Substituir dados que devem ser substituidos por NaN(ex: inf de infinito)
   - Remover linhas onde o target for NaN
-  - Preencher valores nulos com o valor mais frequente para a respectiva coluna(Categoricos)
-  - Preencher valores nulos com a mediana da respectiva coluna(Numéricos)
+  - Preencher valores nulos com o valor mais frequente para a respectiva coluna(Categoricos) ou com np.Nan
+  - Preencher valores nulos com a mediana da respectiva coluna(Numéricos) ou com np.Nan
   - Normalizar variáveis numéricas
   - Fazer Label Enconding das variáveis categóricas(isso otimiza o treinamento do modelo)
   - Aplicar o balanceamento no dataset
