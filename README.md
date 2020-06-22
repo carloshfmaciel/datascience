@@ -28,3 +28,17 @@
  Construção do Modelo
 - Executar o Modelo
 - Calcular acurácia e acerto sobre os dados de teste(Matriz de Confusão)
+
+
+## Como escolher um modelo de Machine Learning
+
+Precisamos definir qual resposta queremos dar ao negócio, ou seja, se é uma Decisão, Estimativa ou Rankeamento.
+
+- **Decisão** - Sim ou Não, 1 ou 0
+<br>Ex: O paciente vai faltar ou não na consulta. O cliente vai pagar ou não o empréstimo
+
+- **Estimativa** - Calcula uma probabilidade
+<br>Ex: Quero enviar sms para os clientes que tem mais de 70% por cento de comprar o produto X. Aqui não existe a premissa de restrição/limite na quantidade de SMS que eu posso enviar. Então não importa se são 10 ou se são 1000 cliente que tem mais de 70% de probabilidade de comprar. Irei enviar para todos.
+
+- **Rankeamento** - Ordenar do item que possui maior probabilidade para o item de menor probabilidade
+<br>Ex: Quero enviar sms para os clientes que tem mais de 70% por cento de comprar o produto X. Porém o negócio tem restrição/limite na quantidade de SMS que eu posso enviar, devido ao budget. Então o negócio diz até quantos cliente posso enviar SMS. Por esta razão ordenamos e obtemos os primeiros até atingir a quantidade que o negócio pode enviar SMS. 
