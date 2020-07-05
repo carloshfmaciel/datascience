@@ -16,6 +16,7 @@
   - Verificar quantidade de dados nulos por coluna
   - Verificar valores únicos por coluna
   - Verificar proporção do target do modelo(ideal é que seja 50/50 ou próximo disso), ou seja, se está balanceado(Gráfico de Barras)
+  - Feature Engineering - Análisar quais outras propriedades RELEVANTES podem ser criadas a partir das existentes
 - Preparação dos dados
   - Remover colunas que não são pertinentes para a analise
   - Substituir dados que devem ser substituidos por NaN(ex: inf de infinito)
@@ -25,6 +26,11 @@
   - Normalizar variáveis numéricas
   - Fazer Label Enconding das variáveis categóricas(isso otimiza o treinamento do modelo)
   - Aplicar o balanceamento no dataset
+  - Feature Engineering - Adição de propriedades RELEVANTES a partir das já existentes
+- Pré Processamento
+  - Testar vários modelos 
+    - Fazendo otimização de parâmetros
+	- Fazendo validação cruzada com cálculo de RMSE(Root Mean Square Error) - Quanto menor o valor, melhor
  Construção do Modelo
 - Executar o Modelo
 - Calcular acurácia e acerto sobre os dados de teste(Matriz de Confusão)
