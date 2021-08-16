@@ -1,5 +1,7 @@
 # Resumo Cursos Datascience
 
+[Estatística para Ciência de Dados e Machine Learning - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/estatistica-para-ciencia-de-dados-e-machine-learning.md)
+
 # Meu Portfólio Análise de dados
 
 [Sistema de recomendação utilizando SVD  - Livro Make Your Own Recommender System](Sistema_de_Recomendação_SVD_Livro_Machine_Learning_Make_Your_Own_Recommender_System.ipynb)
