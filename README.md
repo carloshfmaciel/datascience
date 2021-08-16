@@ -2,6 +2,7 @@
 
 - [Estatística para Ciência de Dados e Machine Learning - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/estatistica-para-ciencia-de-dados-e-machine-learning.md)
 - [Séries Temporais com Python/Pandas/Statsmodels - Youtube](https://github.com/carloshfmaciel/datascience/blob/master/cursos/series-temporais-com-python-pandas-statsmodels.md)
+- [Inteligência Artificial: Sistemas de Recomendação em Python - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/inteligencia-artificial-sistemas-de-recomendacao-em-python.ipynb)
 
 # Meu Portfólio Análise de dados
 
