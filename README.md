@@ -1,6 +1,7 @@
 # Resumo Cursos Datascience
 
-[Estatística para Ciência de Dados e Machine Learning - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/estatistica-para-ciencia-de-dados-e-machine-learning.md)
+- [Estatística para Ciência de Dados e Machine Learning - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/estatistica-para-ciencia-de-dados-e-machine-learning.md)
+- [Séries Temporais com Python/Pandas/Statsmodels - Youtube](https://github.com/carloshfmaciel/datascience/blob/master/cursos/series-temporais-com-python-pandas-statsmodels.md)
 
 # Meu Portfólio Análise de dados
 
