@@ -1,0 +1,65 @@
+## Resumo do Curso Séries Temporais com Python/Pandas/Statsmodels
+
+[Link do Video](https://www.youtube.com/watch?v=JuG8hwVK5uQ&list=PL5fQ3JoS0SZscDaHgXahtx632NMnq5RR-&ab_channel=ORMaster)
+
+- Uma série temporal é sempre representado por gráfico de linhas
+- A primeira coisa a se fazer com um dataframe do pandas de um dataset de série temporal
+  - Identificar no dataframe qual coluna que possui a data será o eixo da análise temporal
+  - Converter essa coluna para datetime
+  - Setar essa coluna como índice do dataframe
+- Em um gráfico de série temporal temos basicamente dois componentes
+  - Tendência(Inclinação da linha)
+  - Ruído(Picos que a linha do gráfico dá)
+- Para visualizar a tendência de um gráfico temos que remover o ruído
+  - Removemos o ruído, ou seja, suavizamos a série aplicando a média móvel e regerando o gráfico de linhas(método rolling do pandas)
+- Sazonalidade é o comportamento de ocorrer picos/quedas de forma regular/cíclica no gráfico
+  - Para visualizar a sazonalidade, temos que remover a tendência, ou seja, converter a série em estacionária, aplicando diferenças sucessivas
+  - Série estacinária possui Média e variância/ruído constantes
+  - Aplicamos a diferença sucessiva utilizando o método diff do pandas, onde ele calcula a diferença entre o período atual - o período anterior
+  - Aplicando o diff e mandando plotar o gráfico de linhas, vemos que não temos tendência
+- Série estacionária - Mantém a mesma média durante toda série
+- Modelo Autoregressivo
+  - Regressão linear dos valores anteriores
+  - Dado legs(quantidade de periodos anteriores), ele estima o periodo posterior
+  - Em tese quanto mais lags/periodos anteriores, melhor a estimativa do periodo posterior
+  - O algoritmo do modelo encontra-se no pacote statsmodels através da classe AR
+  - Para calcular os erros, deve se utilizar os residuais do modelo, ou seja, a propriedade "resid"
+  - Quando falamos Modelo Autoregressivo de Ordem 2, significa que especificamos o periodo de 2 lags, ou seja, ele vai calcular o atual, baseado em dois períodos anteriores
+- Calculando o erro residual 
+  - Calcula-se a média dos erros quadraticos dos residuos
+- Como tomar decisão para configuração de modelos(Quantidade de lags)
+  - Podemos utilizar:
+	- AutoCorrelação
+	  - Tem o mesmo sentido da correlação linear(verifica se existe correlação entre duas variáveis)
+	  - Mede-se a correlação do valor da série temporal, ou seja, se existe correlação do valor atual com os valores de período anteriores(lags)
+	  - utiliza as funções acf(para AutoCorrelação Total) e pacf(para Autocorrelação Total) do statsmodels
+	  - Temos dois tipos:
+		- Autocorrelação total
+		- Autocorrelação parcial(Serve para exibir no grafico qual lag/quantidade de periodos anteriores deve ser utilizado como configuração do modelo autoregressivo)
+	- Validação train/test
+	  - Divide-se o dataset em duas partes(2/3 ou 70% para treino e o restante para teste)
+	  - Treina-se o modelo utilizando o dataset de treino
+	  - Executa a previsão do modelo sobre períodos presentes no dataset de teste
+	  - Em seguida, comparando valores de teste com os previstos, verifica-se(pode ser através de gráfico, cálculo de erros através da média dos quadráticos) o quão próximo do real foi a previsão
+- Modelo ARMA
+  - Autoregressivo com médias móveis
+  - pacote arima dentro de statsmodels
+  - Recebe na sua configuração o p(lag de regressão/quantidade de périodos anteriores á serem considerados) e o q()
+  - possui melhor previsão devido ao componente dos ajustes residuais(q)
+- Modelo ARIMA
+  - Consegue um desmpenho/acerto/previsão melhor que os anteriores
+  - Modelo Autoregressivo de médias móveis integradas
+  - Possui como parâmetros de configuração o p(lags/quantidade de períodos anteriores á serem considerados), d(diferenças) e q(componente de médias móveis)
+  - Para aplicar o modelo ARIMA, é necessario que a série seja estacionaria
+    - Série estacionária possui Média e variância/ruído constantes
+	- Para converter, basta aplicar diferenças sucessivas(método diff do pandas) sobre a série
+  - Após treinar o modelo, para que a previsão ocorra baseada na série original e não da que foi aplicada a estacionaridade, basta informar o parâmetro typ='levels' dentro do método predict
+  - Para prever o próximo período futuro, posterior ao último período da série, basta chamar o método forecast
+- Modelo SARIMA
+  - Além dos componentes/parâmetros de configuração que o ARIMA possui, ele tem um adicional que é o S de Sazonal
+  - Para prever o próximo período futuro, posterior ao último período da série, basta chamar o método forecast 
+- Trabalhando com variáveis exógenas
+  - Significa transformar a série(1 coluna) em um dataframe(N Colunas), ou seja, adicionar colunas/valores/propriedades adicionais que podem representar alguma interferência no valor da séries
+  - Após isso, podemos aplicar algum modelo de regressão sobre os dados e então fazer previsões
+  - Para melhorar a previsão/erro quadrático, temos que considerar tanto os parâmetros do modelo de regressão quanto o parâmetro lags
+    
