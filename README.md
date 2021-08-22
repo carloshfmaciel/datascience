@@ -5,7 +5,7 @@
 - [Inteligência Artificial: Sistemas de Recomendação em Python - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/inteligencia-artificial-sistemas-de-recomendacao-em-python.ipynb)
 
 # Resumo Livros Datascience
-- [Learn Amazon SageMaker](https://github.com/carloshfmaciel/datascience/blob/master/livros/learn_amazon_sageMaker/README.md)
+- [Learn Amazon SageMaker](https://github.com/carloshfmaciel/datascience/tree/master/livros/learn_amazon_sageMaker)
 
 # Meu Portfólio Análise de dados
 
