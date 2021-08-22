@@ -5,7 +5,7 @@ Livro Learn Amazon SageMaker
 - Amazon SageMaker Ground Truth
 	- Serviço que permite compartilhar um dataset(pode ser texto ou imagens) com um grupo de pessoas(workers) de dentro da propria empresa ou ao redor do mundo
 	- O que essas pessoas(workers) farão?
-		- Para treinar um modelo de machine learning para fazer reconhecimento de imagens por exemplo, é necessario treina-lo com imagens que estejam rotuladas
+		- Para treinar um modelo de machine learning para fazer reconhecimento de imagens por exemplo, é necessario treina-lo com imagens que estejam rotuladas(Esse rótulo deve ser feito por um humano)
 		- Ex: Eu tenho uma imagem de um gato e eu tenho um metadado que diz que aquela imagem tem um gato
 		- Para disponibilizar essas imagens "rotuladas"
 			- Podemos obter uma base de dados rotulada
