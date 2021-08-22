@@ -1,4 +1,5 @@
-Livro Learn Amazon SageMaker
+# Livro Learn Amazon SageMaker
+[Link Livro](https://www.packtpub.com/product/learn-amazon-sagemaker/9781800208919)
 
 ## Chapter 2 
 
