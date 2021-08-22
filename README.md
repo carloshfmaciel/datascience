@@ -4,6 +4,9 @@
 - [Séries Temporais com Python/Pandas/Statsmodels - Youtube](https://github.com/carloshfmaciel/datascience/blob/master/cursos/series-temporais-com-python-pandas-statsmodels.md)
 - [Inteligência Artificial: Sistemas de Recomendação em Python - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/inteligencia-artificial-sistemas-de-recomendacao-em-python.ipynb)
 
+# Resumo Livros Datascience
+- Learn Amazon SageMaker
+
 # Meu Portfólio Análise de dados
 
 [Sistema de recomendação utilizando SVD  - Livro Make Your Own Recommender System](Sistema_de_Recomendação_SVD_Livro_Machine_Learning_Make_Your_Own_Recommender_System.ipynb)
