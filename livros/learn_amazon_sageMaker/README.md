@@ -175,3 +175,46 @@
   - SDK MultiLinguagem quer permite codificar toda a infraestrutura de um deploy qualquer, inclusive um de Machine Learning
 - AWS Step Functions
   - Recurso que permite automatizar todo o processo de Machine Learning(Treinamento do Modelo, Teste e Deploy do Endpoint)
+
+
+## Chapter 13 - Dicas de Otimização de Custo ao utilizar a AWS para ML
+- Autoscaling endpoint
+  - Autoscaling do SageMaker é baseado no Application Autoscaling
+	- https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html
+	- Técnica para definir o número de requisições por segundo ou minuto da configuração
+	  - Rodar teste carga em uma instância e monitorar a latência do modelo
+- MultiModel Endpoint
+  - Podemos servir multiplos modelos em um mesmo endpoint
+	- Nativamente as seguintes libs suportam: Scikit-Learn, XGBoost, Apache MXNet, and PyTorch
+	- Como funciona?
+	  - Os modelos ficam no S3
+		- Na requisição da API informamos o nome/id do modelo que queremos usar
+	- Onde usaríamos?
+    - Imagina que temos 1000 clientes que servimos um serviço de predição
+    - Cada cliente tem uma massa de dados diferente, portanto um modelo diferente
+    - Colocar cada modelo em um endpoint aumentaria o custo e dificultaria a gestão desses endpoints
+- CPU x GPU
+  - Verificar se o algoritmo de ML funciona melhor com GPU
+  - Algoritmos de Deep Learning(Computer Vision e Natural Language Processing) funcionam melhor com GPU	
+- Elastic Inference
+  - Recurso que permite acelerar o processamento do algoritmo á uma fração do custo de ter uma instância com GPU exclusiva
+  - Melhor aplicado para algoritmos de Deep Learning
+- Amazon Sagemaker NEO
+  - Ferramenta de Compilação que builda modelos de ML otimizados para instâncias/hardwares específicos
+	- Pode deixar a resposta do algoritmo até 5x mais rápido
+	- Mais apropriado para algoritmos de Deep Learning
+	- Verificar quais algoritmos suportados
+- Dicas para otimizar custos
+  - Usar LocalMode ao invés de usar um notebook instance
+	- Caso use notebook instance, escolha uma instância do tamanho apropriado para o dataset
+	- Usar datasets apropriados(tamanho) para avaliar algoritmos
+	- Parar notebook instances quando terminar de usar
+  - Não treine modelos em notebook instances
+    - Custa muito caro
+    - Usar managed instances
+      - Distributed Training
+      - Mais barato e Mais rápido
+      - Só é cobrado o tempo que foi processado			
+	- Usar o Pipe Mode
+    - Dataset é lido diretamente do S3 sem cópia de arquivos
+  - Usar Managed Spot Training
