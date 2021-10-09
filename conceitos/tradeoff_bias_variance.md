@@ -12,24 +12,25 @@ O principal objetivo de um modelo de ML é aprender um padrão e identificar ond
 Expressão em inglês que significa escolher uma coisa em detrimento de outra, ou seja, seria a busca de um meio termo
 			
 ## Viés(Bias)
-  - O que é Viés(Bias)?
-    - A diferença entre o MONTANTE do valor real/alvo e o valor previsto pelo modelo, ou seja, o quanto o modelo ERRA em prever sobre os dados de treinamento
-    - O conceito de Viés em ML sempre está relacionado aos dados de treinamento
-    - Portanto um bom modelo deve ter BAIXO VIÉS(baixo erro)
-  - Tipos de Viés(Bias)
-      - Viés Alto/High Bias
-        - Quando o modelo erra muito sobre os dados de treinamento
-      - Viés Baixo/Low Bias
-        - Quando o modelo erra pouco sobre os dados de treinamento
+- O que é Viés(Bias)?
+  - A diferença entre o MONTANTE do valor real/alvo e o valor previsto pelo modelo, ou seja, o quanto o modelo ERRA em prever sobre os dados de treinamento
+  - O conceito de Viés em ML sempre está relacionado aos dados de treinamento
+- Portanto um bom modelo deve ter BAIXO VIÉS(baixo erro)
+- Tipos de Viés(Bias)
+  - Viés Alto/High Bias
+    - Quando o modelo erra muito sobre os dados de treinamento
+  - Viés Baixo/Low Bias
+    - Quando o modelo erra pouco sobre os dados de treinamento
 						
 ## Variância(Variance)
+- O que é Variância(Variance)?
   - É a diferença que ocorre entre a quantidade de erros/acertos sobre os dados de treinamento, versus o montante de erros/acertos sobre os dados de teste
-  - Quando falamos de variância
-  - Tipos de Variância
-    - Alta Variância/High Variance
-      - Quando o modelo erra muito sobre os dados de teste
-    - Baixa Variância/Low Variance
-      - Quando o modelo erra pouco sobre os dados de teste			
+  - O conceito de Variância aqui sempre está relacionado aos dados de teste
+- Tipos de Variância
+  - Alta Variância/High Variance
+    - Quando o modelo erra muito sobre os dados de teste
+  - Baixa Variância/Low Variance
+    - Quando o modelo erra pouco sobre os dados de teste			
 
 ## O que faz o modelo ter viés alto(errar muito sobre os dados de treinamento) e/ou variância alta?
   - Seleção de um modelo não apropriado
