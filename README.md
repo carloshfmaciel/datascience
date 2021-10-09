@@ -1,5 +1,5 @@
 # Conceitos
-- Tradeoff entre viés(bias) e variância(variance)
+- [Tradeoff entre viés(bias) e variância(variance)](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/tradeoff_bias_variance.md)
 
 # Resumo Cursos Datascience
 
