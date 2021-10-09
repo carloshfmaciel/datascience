@@ -71,7 +71,7 @@ Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os da
         - Conforme vamos otimizando o modelo o erro vai diminuindo tanto para sobre os dados de treinamento, quanto para os dados de teste
         - A partir do momento em que o modelo começa a errar para os dados de teste e continua acertar para os dados de treinamento, devemos parar! Nesse momento temos o início do overfitting.
 	- Gráfico abaixo, vemos que conforme aumentamos a complexidade(ajustes, parametrização e etc...)
-
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tradeoff_bias_variance_graphic.jpg)
 	- Conforme figura anterior, devemos usar o modelo parâmetrizado no momento ANTES de começar a errar sobre os dados de teste
         
  ## Técnicas   
