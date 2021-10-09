@@ -1,14 +1,15 @@
 ## Viés(Bias) x Variância(Variance)
-	  - O que são?
-		  - Viés e Variância são dois erros de previsão que ocorrem principalmente durante o processo de aprendizagem de máquina
-		- Modelo
-		  - O principal objetivo de um modelo de ML é aprender um padrão e identificar onde esse padrão se repete sobre novos dados
-			- O que é um bom modelo?
-				- É aquele que consegue aprender os padrões, ou seja, generalizar os dados de treinamento e prever com acurácia/baixo erro, padrões de novos dados
-		    - Possuir Baixo Viés e Baixa Variância
+- O que são?
+  - Viés e Variância são dois erros de previsão que ocorrem principalmente durante o processo de aprendizagem de máquina
+
+## Modelo
+O principal objetivo de um modelo de ML é aprender um padrão e identificar onde esse padrão se repete sobre novos dados
+- O que é um bom modelo?
+  - É aquele que consegue aprender os padrões, ou seja, generalizar os dados de treinamento e prever com acurácia/baixo erro, padrões de novos dados
+  - Possuir Baixo Viés e Baixa Variância
+
 ## O que é trade-off
-		  - Expressão em inglês que significa escolher uma coisa em detrimento de outra
-			- Seria a busca de um meio termo
+Expressão em inglês que significa escolher uma coisa em detrimento de outra, ou seja, seria a busca de um meio termo
 			
 ## Viés(Bias)
   - O que é Viés(Bias)?
