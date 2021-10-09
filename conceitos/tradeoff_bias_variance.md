@@ -70,7 +70,8 @@ Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os da
         - Para cada iteração, calcular o RMSE e plotar em um gráfico de linhas a lista de resultado sobre os dados de treinamento e de teste
         - Conforme vamos otimizando o modelo o erro vai diminuindo tanto para sobre os dados de treinamento, quanto para os dados de teste
         - A partir do momento em que o modelo começa a errar para os dados de teste e continua acertar para os dados de treinamento, devemos parar! Nesse momento temos o início do overfitting.
-        - Gráfico abaixo
-        - Conforme figura anterior, devemos usar o modelo parametrizado no momento ANTES do modelo começar a errar para os dados de teste 
+	- Gráfico abaixo, vemos que conforme aumentamos a complexidade(ajustes, parametrização e etc...)
+
+	- Conforme figura anterior, devemos usar o modelo parâmetrizado no momento ANTES de começar a errar sobre os dados de teste
         
  ## Técnicas   
