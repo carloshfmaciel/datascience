@@ -36,7 +36,7 @@ Expressão em inglês que significa escolher uma coisa em detrimento de outra, o
   - Baixa qualidade dos dados(inclusão de dados que são inúteis para a previsão - ruído)
   - Adição de complexidade
 			
-# Overfitting e Underfitting
+## Overfitting e Underfitting
 Dependendo da qualidade dos dados de treinamento e dos ajustes que realizamos no modelo, o modelo pode se ajustar demais ou menos do que deveria.<br>
 Quando o modelo não se ajusta, ou seja, não consegue capturar os padrões dos dados de treinamento, ele também é incapaz de prever com acerto sobre novos dados.	<br>		
 Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os dados e o mesmo será incapaz de prever com acerto sobre novos dados.<br>
@@ -49,7 +49,7 @@ Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os da
   - Viés Alto
   - Variância Alta
       			
-# Desafio
+## Desafio
   - Para que um modelo seja bom, ele precisa passar por otimização que significa adição de complexidade
     - O que é otimização/complexidade do modelo?
       - Quando fazemos ajustes para melhorar a acurácia do modelo, estamos adicionando complexidade 
