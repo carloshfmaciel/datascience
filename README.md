@@ -1,3 +1,6 @@
+# Conceitos
+- Tradeoff entre viés(bias) e variância(variance)
+
 # Resumo Cursos Datascience
 
 - [Estatística para Ciência de Dados e Machine Learning - Udemy](https://github.com/carloshfmaciel/datascience/blob/master/cursos/estatistica-para-ciencia-de-dados-e-machine-learning.md)
