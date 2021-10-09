@@ -74,4 +74,10 @@ Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os da
 ![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tradeoff_bias_variance_graphic.jpg)
 	- Conforme figura anterior, devemos usar o modelo parâmetrizado no momento ANTES de começar a errar sobre os dados de teste
         
- ## Técnicas   
+ ## Técnicas
+ 
+ ## Referências
+https://www.dadosaleatorios.com.br/post/overfitting/<br>
+https://lamfo-unb.github.io/2017/04/29/Um-Olhar-Descontraido-Sobre-o-Dilema-Vies-Variancia/<br>
+https://datascience.eu/pt/matematica-e-estatistica/vies-vs-variancia/<br>
+http://regisely.com/blog/bias-variance/<br>
