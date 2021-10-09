@@ -51,14 +51,14 @@ Por outro lado, se o modelo se ajusta demais sobre os dados de treinamento, sign
   - Variância Alta
       			
 ## Desafio
-  - Para que um modelo seja bom, ele precisa passar por otimização que significa adição de complexidade
-    - O que é otimização/complexidade do modelo?
-      - Quando fazemos ajustes para melhorar a acurácia do modelo, estamos adicionando complexidade 
-      - Esses ajustes podem ser
-        - Adição de neurônios ou camadas(Redes Neurais)
-        - Adição de mais nós(Árvores de Decisão)
-        - Adição de mais features
-        - HyperParameters
+Para que um modelo seja bom, ele precisa passar por otimização que significa adição de complexidade
+- O que é otimização/complexidade do modelo?
+  - Quando fazemos ajustes para melhorar a acurácia do modelo, estamos adicionando complexidade 
+    - Esses ajustes podem ser
+      - Adição de neurônios ou camadas(Redes Neurais)
+      - Adição de mais nós(Árvores de Decisão)
+      - Adição de mais features
+      - HyperParameters
   - Temos aqui um cobertor curto, pois conforme o viés é reduzido, temos o aumento da variância e vice-versa
   - O desafio aqui é calibrar ambos até o momento que se deve parar a otimização do modelo)
   - Quando se deve parar de otimizar o modelo?
