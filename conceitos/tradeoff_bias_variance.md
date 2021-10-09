@@ -40,7 +40,7 @@ Expressão em inglês que significa escolher uma coisa em detrimento de outra, o
 ## Overfitting e Underfitting
 Dependendo da qualidade dos dados de treinamento e dos ajustes que realizamos no modelo, o modelo pode se ajustar demais ou menos do que deveria.<br>
 Quando o modelo não se ajusta, ou seja, não consegue capturar os padrões dos dados de treinamento, ele também é incapaz de prever com acerto sobre novos dados.	<br>		
-Quando o modelo se ajusta de mais sobre os dados significa que ele decorou os dados e o mesmo será incapaz de prever com acerto sobre novos dados.<br>
+Por outro lado, se o modelo se ajusta demais sobre os dados de treinamento, significa que ele decorou os dados e ele será incapaz de prever com acerto quando tiver que prever sobre dados novos.<br>
 - Overfitting
   - Quando o modelo se ajusta muito bem aos dados do treinamento(Overfitting), mas não sobre os dados de teste, ou seja, ele não aprende, ele decora
   - Viés Baixo
