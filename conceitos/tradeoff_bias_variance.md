@@ -59,9 +59,11 @@ Para que um modelo seja bom, ele precisa passar por otimização, o que signific
       - Adição de mais nós(Árvores de Decisão)
       - Adição de mais features
       - HyperParameters
-Temos aqui um cobertor curto, pois conforme o viés é reduzido, temos o aumento da variância e vice-versa.<br>
-O grande desafio aqui é calibrar ambos até o momento que se deve parar a otimização do modelo)
-  - Quando se deve parar de otimizar o modelo?
+
+Temos aqui um cobertor curto, pois conforme o viés é reduzido, podemos ter um aumento da variância e vice-versa.
+<br>O grande desafio aqui é calibrar ambos até o momento em que se deve parar a otimização do modelo.
+
+- Quando se deve parar de otimizar o modelo?
     - Remédio x Veneno
       - Como dizem: A diferença entre o remédio e o veneno é a dose
       - O desafio é calibrar ambos até o momento em que "se deve parar de otimizar", ou seja, BUSCAR O MEIO TERMO entre viés e variância
