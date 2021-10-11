@@ -63,19 +63,19 @@ Para que um modelo seja bom, ele precisa passar por otimização, o que signific
 Temos aqui um cobertor curto, pois conforme o viés é reduzido, podemos ter um aumento da variância e vice-versa.
 <br>O grande desafio aqui é calibrar ambos até o momento em que se deve parar a otimização do modelo.
 
-- Quando se deve parar de otimizar o modelo?
-    - Remédio x Veneno
-      - Como dizem: A diferença entre o remédio e o veneno é a dose
-      - O desafio é calibrar ambos até o momento em que "se deve parar de otimizar", ou seja, BUSCAR O MEIO TERMO entre viés e variância
-      - Quando devemos parar de otimizar?
-        - Gerar N modelos(cada modelo com seu respectivo ajuste/parametrização)
-        - Executar de forma iterada cada modelo para prever sobre os dados de treinamento e de teste
-        - Para cada iteração, calcular o RMSE e plotar em um gráfico de linhas a lista de resultado sobre os dados de treinamento e de teste
-        - Conforme vamos otimizando o modelo o erro vai diminuindo tanto para sobre os dados de treinamento, quanto para os dados de teste
-        - A partir do momento em que o modelo começa a errar para os dados de teste e continua acertar para os dados de treinamento, devemos parar! Nesse momento temos o início do overfitting.
-	- Gráfico abaixo, vemos que conforme aumentamos a complexidade(ajustes, parametrização e etc...)
+### Quando se deve parar de otimizar o modelo?
+- Remédio x Veneno
+  - Como dizem: A diferença entre o remédio e o veneno é a dose
+    - O desafio é calibrar ambos até o momento em que "se deve parar de otimizar", ou seja, BUSCAR O MEIO TERMO entre viés e variância
+    - Quando devemos parar de otimizar?
+      - Gerar N modelos(cada modelo com seu respectivo ajuste/parametrização)
+      - Executar de forma iterada cada modelo para prever sobre os dados de treinamento e de teste
+      - Para cada iteração, calcular o RMSE e plotar em um gráfico de linhas a lista de resultado sobre os dados de treinamento e de teste
+      - Conforme vamos otimizando o modelo o erro vai diminuindo tanto sobre os dados de treinamento, quanto sobre os dados de teste
+      - A partir do momento em que o modelo começa a errar para os dados de teste e continua acertar para os dados de treinamento, devemos parar! Nesse momento temos o início do overfitting.
+      - Gráfico abaixo, vemos que conforme aumentamos a complexidade(ajustes, parametrização e etc...)
 ![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tradeoff_bias_variance_graphic.jpg)
-	- Conforme figura anterior, devemos usar o modelo parâmetrizado no momento ANTES de começar a errar sobre os dados de teste
+      - Conforme figura anterior, devemos usar o modelo parâmetrizado no momento ANTES de começar a errar sobre os dados de teste
         
  ## Técnicas
  
