@@ -43,12 +43,12 @@ Quando o modelo não se ajusta, ou seja, não consegue capturar os padrões dos 
 Por outro lado, se o modelo se ajusta demais sobre os dados de treinamento, significa que ele decorou os dados e ele será incapaz de prever com acerto quando tiver que prever sobre dados novos.<br>
 - Overfitting
   - Quando o modelo se ajusta muito bem aos dados do treinamento(Overfitting), mas quando executado sobre os dados de teste, performa mal, ou seja, ele não aprendeu, ele decorou os dados do treinamento
-  - Viés Baixo
-  - Variância Alta
+  - Viés Baixo(erra pouco ou quase nada sobre os dados de treinamento)
+  - Variância Alta(a diferença entre acerto sobre dados de treinamento versus acertos sobre dados de teste)
 - Underfitting
-  - Modelo que se ajusta mal aos dados do passado
-  - Viés Alto
-  - Variância Alta
+  - Modelo que se ajusta mal aos dados de treinamento
+  - Viés Alto(erra muito sobre os dados de treinamento)
+  - Variância Alta(a diferença entre acerto sobre dados de treinamento versus acertos sobre dados de teste)
       			
 ## Desafio
 Para que um modelo seja bom, ele precisa passar por otimização que significa adição de complexidade
