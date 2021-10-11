@@ -1,6 +1,6 @@
 ## Viés(Bias) x Variância(Variance)
 - O que são?
-  - Viés e Variância são dois erros de previsão que ocorrem principalmente durante o processo de aprendizagem de máquina
+  - Viés e Variância são dois erros de previsão que ocorrem principalmente durante o processo de aprendizagem de máquina(no processo de treino e teste)
 
 ## Modelo
 O principal objetivo de um modelo de ML é aprender um padrão e identificar onde esse padrão se repete sobre novos dados
