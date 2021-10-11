@@ -51,7 +51,7 @@ Por outro lado, se o modelo se ajusta demais sobre os dados de treinamento, sign
   - Variância Alta(a diferença entre acerto sobre dados de treinamento versus acertos sobre dados de teste)
       			
 ## Desafio
-Para que um modelo seja bom, ele precisa passar por otimização que significa adição de complexidade
+Para que um modelo seja bom, ele precisa passar por otimização, o que significa adição de complexidade
 - O que é otimização/complexidade do modelo?
   - Quando fazemos ajustes para melhorar a acurácia do modelo, estamos adicionando complexidade 
     - Esses ajustes podem ser
