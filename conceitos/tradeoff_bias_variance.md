@@ -33,7 +33,7 @@ Expressão em inglês que significa escolher uma coisa em detrimento de outra, o
     - Quando o modelo erra pouco sobre os dados de teste			
 
 ## O que faz o modelo ter viés alto(errar muito sobre os dados de treinamento) e/ou variância alta?
-  - Seleção de um modelo não apropriado
+  - Seleção de um modelo(algoritmo de ML) não apropriado para o dataset/tipo do problema
   - Baixa qualidade dos dados(inclusão de dados que são inúteis para a previsão - ruído)
   - Adição de complexidade
 			
