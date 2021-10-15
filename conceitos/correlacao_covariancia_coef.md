@@ -5,7 +5,7 @@ Mede o quanto uma variável influencia a outra, ou seja, se correlaciona.
 ## Regressão
 Previsão de valores futuros
 	
-### Como saber se posso aplicar regressão linear para estimar valores de um determinado cenário?
+### Como saber se posso aplicar regressão(linear ou múltipla) para estimar valores de um determinado cenário?
 - Verificar se existe forte correlação entre a(s) variável(is) X e y
   - Como calcular a correlação?
     - Através do coeficiente de correlação
