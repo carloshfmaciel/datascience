@@ -71,10 +71,21 @@ Temos portanto o valor de 0,99 que está bem próximo de 1. Ou seja, temos aqui 
 - O resultado é o percentual que a variável dependente(y) consegue ser explicada pela(s) variáveil(eis) independente(s), ou seja, x
 - Ele diz quanto por cento o modelo de regressão é melhor do que o modelo mais simples(modelo de média)
 - Quanto maior o valor, melhor é o modelo de regressão em relação ao modelo de média
-- Fórmula
-  - (1-(Soma dos erros do modelo de regressão SOBRE Soma dos erros do modelo de média))
-  - Link(https://www.youtube.com/watch?v=xeGBoa--xzY)
-- Printar o cálculo(Link https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533840#overview)	
+
+Abaixo temos a fórmula do cálculo do coeficiente de determinação
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_det.jpg)
+
+Onde:
+- R² = Coeficiente de Determinação
+- RSS = Erro entre os modelos(Soma dos residuais quadrados)
+- TSS = Erro do modelo de média(Soma Total dos quadrados) 
+
+Também podemos calcular a partir do resultado do coeficiente de correlação, onde a fómula e valores ficariam conforme abaixo:
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_det_com_valores.jpg)
+
+Conforme resultado acima, interpretamos que 98% da variável dependente(y, ou seja, no caso o preço) é explicada pela variável independente(X, no caso o tamanho do imóvel).	
 
 ## Observação
 - Correlação nem sempre significa causa
