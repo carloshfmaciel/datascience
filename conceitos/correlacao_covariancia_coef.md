@@ -12,15 +12,33 @@ Previsão de valores futuros
     - Podemos também exibindo um gráfico de linhas
       - Caso tenhamos uma linha reta na diagonal(ascendente ou descendente) e boa parte dos dados estiverem concentrados nela			
 
+Abaixo temos a definição de quando existe correlação. Ou seja, comparamos o resultado da covariância ou do coeficiente de correlação no critério abaixo:
+- Quando o resultado do coeficiente de correlação for > 0 temos uma correlação positiva(conforme X aumenta o y também aumenta)
+- Quando o resultado do coeficiente de correlação for < 0 temos uma correlação negativa(conforme X aumenta o y diminui)
+- Quando o resultado do coeficiente de correlação for = 0, as variáveis são independentes, não possuem correlação, uma variável não está relacionada com a outra
+
  ## Covariância
- - Mede utilizando a própria escala das variáveis a correlação entre as variáveis, ou seja, quanto uma variável influencia a outra
-   - Ponto negativo é que trabalha com as variáveis em escalas diferentes, dificultando a análise
-   - Seu cálculo é a base para o cálculo do coeficiente de correlação
- - Printar o calculo e a tabela com o calculo(Link https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533840#overview)
- - Resumo
-   - Quando > 0 temos uma correção positiva(conforme uma var aumenta a outra também aumenta)
-   - Quando < 0 temos correlação negativa(conforme uma var aumenta a outra diminui)
-   - Quando = 0, as variáveis são independentes, uma variável não está relacionada com outra
+Mede utilizando a própria escala das variáveis a correlação entre as variáveis, ou seja, quanto uma variável influencia a outra
+- Ponto negativo é que trabalha com as variáveis em escalas diferentes, dificultando a análise
+- Seu cálculo é a base para o cálculo do coeficiente de correlação
+
+No exemplo abaixo, temos uma amostra de 4 registros que representam 4 imóveis, onde temos o tamanho em metro quadrado e o preço.
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tabela_covariancia.jpg)
+
+Abaixo temos a fórmula do cálculo da covariância
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_variancia.jpg)
+
+E abaixo temos a fórmula com os respectivos valores
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_variancia_com_valores.jpg)
+
+Temos portanto uma variância de 178.500 que é maior que 0. Portanto temos uma correlação positiva(conforme X aumenta, y também aumenta). 
+
+Porém será que essa correlação é forte ou fraca? Perceba que não temos idéia dos limites dessa correlação, portanto fica difícil mensurar a força da mesma.
+
+Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente de correlação, que utilizando o resultado da covariância calcula a força da correlação.
 
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
