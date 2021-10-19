@@ -42,10 +42,20 @@ Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente
 
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
-  - Quando > 0 temos uma correção positiva(conforme uma var aumenta a outra também aumenta)
-  - Quando < 0 temos correlação negativa(conforme uma var aumenta a outra diminui)
+  - Quando > 0 temos uma correção positiva(conforme X aumenta, y também aumenta)
+  - Quando < 0 temos correlação negativa(conforme X, y diminui)
   - Quando = 0, as variáveis são independentes, uma variável não está relacionada com outra
-- Printar o cálculo(Link https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533840#overview)			
+
+Abaixo temos a fórmula do cálculo do coeficiente de correlação
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr.jpg)
+
+E abaixo temos a fórmula com os respectivos valores
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr_com_valores.jpg)
+
+Temos portanto o valor de 0,99 que está bem próximo de 1. Ou seja, temos aqui uma correlação forte que significa que conforme X(o tamanho do imóvel) aumenta, o valor de y(preço do imóvel) também aumenta.
+			
 - Quanto mais próximo de 1 ou -1, mais forte é a correlação entre as variáveis
   - Printar exemplos e códigos (Link: https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533844#overview)
     - Mostrar em python o calculo de alguma que possua forte correlação positiva
