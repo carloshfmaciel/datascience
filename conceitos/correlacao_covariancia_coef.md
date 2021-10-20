@@ -57,6 +57,13 @@ dataset = pd.DataFrame({'tamanho': tamanho, 'preco': preco})
 dataset
 ```
 
+||**tamanho**	|**preco**|
+|-|---------|-----|
+|0|	30	   |57000|
+|1|	39	   |69000|
+|2|	49	   |77000|
+|3|	60	   |90000|
+
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
   - Quando > 0 temos uma correlação positiva(conforme X aumenta, y também aumenta)
