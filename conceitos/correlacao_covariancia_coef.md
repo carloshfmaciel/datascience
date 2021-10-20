@@ -17,7 +17,7 @@ Abaixo temos a definição de quando existe correlação. Ou seja, comparamos o 
 - Quando o resultado do coeficiente de correlação for < 0 temos uma correlação negativa(conforme X aumenta o y diminui)
 - Quando o resultado do coeficiente de correlação for = 0, as variáveis são independentes, não possuem correlação, uma variável não está relacionada com a outra
 
- ## Covariância
+## Covariância
 Mede utilizando a própria escala das variáveis a correlação entre as variáveis, ou seja, quanto uma variável influencia a outra
 - Ponto negativo é que trabalha com as variáveis em escalas diferentes, dificultando a análise
 - Seu cálculo é a base para o cálculo do coeficiente de correlação
@@ -39,6 +39,8 @@ Temos portanto uma variância de 178.500 que é maior que 0. Portanto temos uma 
 Porém será que essa correlação é forte ou fraca? Perceba que não temos idéia dos limites dessa correlação, portanto fica difícil mensurar a força da mesma.
 
 Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente de correlação, que utilizando o resultado da covariância calcula a força da correlação.
+
+### Calculando Covariância em Python
 
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
