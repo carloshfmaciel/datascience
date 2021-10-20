@@ -10,7 +10,7 @@ Previsão de valores futuros
   - Como calcular a correlação?
     - Através do coeficiente de correlação
     - Podemos também exibindo um gráfico de linhas
-      - Caso tenhamos uma linha reta na diagonal(ascendente ou descendente) e boa parte dos dados estiverem concentrados nela			
+      - Caso tenhamos uma linha reta na diagonal(ascendente ou descendente) e boa parte dos dados estiverem concentrados nela	
 
 Abaixo temos a definição de quando existe correlação. Ou seja, comparamos o resultado da covariância ou do coeficiente de correlação no critério abaixo:
 - Quando o resultado do coeficiente de correlação for > 0 temos uma correlação positiva(conforme X aumenta o y também aumenta)
@@ -40,7 +40,25 @@ Porém será que essa correlação é forte ou fraca? Perceba que não temos id�
 
 Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente de correlação, que utilizando o resultado da covariância calcula a força da correlação.
 
-### Calculando Covariância em Python
+## Coeficiente de Correlação
+- A faixa de valores do resultado é sempre entre -1 e 1
+  - Quando > 0 temos uma correlação positiva(conforme X aumenta, y também aumenta)
+  - Quando < 0 temos correlação negativa(conforme X aumenta, y diminui)
+  - Quando = 0, as variáveis são independentes, uma variável não está relacionada com outra
+
+Abaixo temos a fórmula do cálculo do coeficiente de correlação
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr.jpg)
+
+E abaixo temos a fórmula com os respectivos valores
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr_com_valores.jpg)
+
+Temos portanto o valor de 0,99 que está bem próximo de 1. Ou seja, temos aqui uma correlação forte que significa que conforme X(o tamanho do imóvel) aumenta, o valor de y(preço do imóvel) também aumenta.
+			
+- Quanto mais próximo de 1 ou -1, mais forte é a correlação entre as variáveis
+
+### Calculando o Coeficiente de Correlação em Python
 
 ```python
 # importações
@@ -64,23 +82,16 @@ dataset
 |2|	49	   |77000|
 |3|	60	   |90000|
 
-## Coeficiente de Correlação
-- A faixa de valores do resultado é sempre entre -1 e 1
-  - Quando > 0 temos uma correlação positiva(conforme X aumenta, y também aumenta)
-  - Quando < 0 temos correlação negativa(conforme X aumenta, y diminui)
-  - Quando = 0, as variáveis são independentes, uma variável não está relacionada com outra
+```python
+# calculando o coeficiente de correlação entre tamanho e preço
+np.corrcoef(tamanho, preco)
+```
+```
+# Perceba que a correlação entre tamanho e preço é de 0.99
+array([[1.        , 0.99620063],
+       [0.99620063, 1.        ]])
+```
 
-Abaixo temos a fórmula do cálculo do coeficiente de correlação
-
-![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr.jpg)
-
-E abaixo temos a fórmula com os respectivos valores
-
-![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/calc_form_coef_corr_com_valores.jpg)
-
-Temos portanto o valor de 0,99 que está bem próximo de 1. Ou seja, temos aqui uma correlação forte que significa que conforme X(o tamanho do imóvel) aumenta, o valor de y(preço do imóvel) também aumenta.
-			
-- Quanto mais próximo de 1 ou -1, mais forte é a correlação entre as variáveis
   - Printar exemplos e códigos (Link: https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533844#overview)
     - Mostrar em python o calculo de alguma que possua forte correlação positiva
     - Mostrar em python o calculo de alguma que possua forte correlação negativa
