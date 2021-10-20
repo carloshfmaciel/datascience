@@ -42,7 +42,7 @@ Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente
 
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
-  - Quando > 0 temos uma correção positiva(conforme X aumenta, y também aumenta)
+  - Quando > 0 temos uma correlação positiva(conforme X aumenta, y também aumenta)
   - Quando < 0 temos correlação negativa(conforme X, y diminui)
   - Quando = 0, as variáveis são independentes, uma variável não está relacionada com outra
 
