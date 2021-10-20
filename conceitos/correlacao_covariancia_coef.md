@@ -99,7 +99,7 @@ array([[1.        , 0.99620063],
     - Exibir gráfico de correlação usando o YellowBrik
 - Printar tabela de correlação e interpretação
 
-## Coeficiente de Determinação
+## Coeficiente de Determinação / R²
 - Conhecido também como R2 ou R Score
 - Ele é um número entre 0 e 1
 - É a proporção do erro do modelo de regressão em relação ao erro do modelo de média	
