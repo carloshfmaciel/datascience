@@ -42,6 +42,21 @@ Visando facilitar essa interpretação, temos a seguir o cálculo do coeficiente
 
 ### Calculando Covariância em Python
 
+```python
+# importações
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import math
+
+# montando base de dados
+tamanho = np.array([30, 39, 49, 60])
+preco = np.array([57000, 69000, 77000, 90000])
+
+dataset = pd.DataFrame({'tamanho': tamanho, 'preco': preco})
+dataset
+```
+
 ## Coeficiente de Correlação
 - A faixa de valores do resultado é sempre entre -1 e 1
   - Quando > 0 temos uma correlação positiva(conforme X aumenta, y também aumenta)
