@@ -17,6 +17,12 @@ Abaixo temos a definição de quando existe correlação. Ou seja, comparamos o 
 - Quando o resultado do coeficiente de correlação for < 0 temos uma correlação negativa(conforme X aumenta o y diminui)
 - Quando o resultado do coeficiente de correlação for = 0, as variáveis são independentes, não possuem correlação, uma variável não está relacionada com a outra
 
+### Força da Correlação
+
+De acordo com o resultado do coeficiente de correlação, temos:
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tab_coef_corr.jpg)
+
 ## Covariância
 Mede utilizando a própria escala das variáveis a correlação entre as variáveis, ou seja, quanto uma variável influencia a outra
 - Ponto negativo é que trabalha com as variáveis em escalas diferentes, dificultando a análise
