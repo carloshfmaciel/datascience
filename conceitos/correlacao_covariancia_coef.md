@@ -100,13 +100,6 @@ array([[1.        , 0.99620063],
        [0.99620063, 1.        ]])
 ```
 
-  - Printar exemplos e códigos (Link: https://www.udemy.com/course/estatistica-para-ciencia-de-dados-machine-learning/learn/lecture/22533844#overview)
-    - Mostrar em python o calculo de alguma que possua forte correlação positiva
-    - Mostrar em python o calculo de alguma que possua forte correlação negativa
-    - Mostrar em python o calculo de não possua correlação positiva
-    - Exibir gráfico de correlação usando o YellowBrik
-- Printar tabela de correlação e interpretação
-
 ## Coeficiente de Determinação / R²
 - Conhecido também como R2 ou R Score
 - Ele é um número entre 0 e 1
