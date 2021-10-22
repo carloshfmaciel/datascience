@@ -143,6 +143,7 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots(figsize=(15,15))
 ax = sns.heatmap(dataset.corr(), annot=True)
 ```
+Perceba que as propriedades que possuem maior correlação com preço são: bathroom(0.53), grade(0.67), sqft_above(0.61) e sqft_living15(0.59).
 
 ![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/heatmap_houses.png)
 
@@ -156,6 +157,9 @@ grafico = FeatureCorrelation(labels = columns)
 grafico.fit(dataset.iloc[:, 1:16].values, dataset.iloc[:, 0].values)
 grafico.show();
 ```
+
+Aqui podemos ver a força da correlação(coeficiente de correlação) através de barras.
+Perceba que as propriedades que possuem maior correlação com preço são: bathroom(0.53), grade(0.67), sqft_above(0.61) e sqft_living15(0.59).
 
 ![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/bargraph_houses.png)
 
