@@ -23,6 +23,8 @@ De acordo com o resultado do coeficiente de correlação, temos:
 
 ![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/tab_coef_corr.jpg)
 
+Para termos um bom resultado o ideal é que a correlação seja moderada ou forte.
+
 ## Covariância
 Mede utilizando a própria escala das variáveis a correlação entre as variáveis, ou seja, quanto uma variável influencia a outra
 - Ponto negativo é que trabalha com as variáveis em escalas diferentes, dificultando a análise
