@@ -144,7 +144,7 @@ fig, ax = plt.subplots(figsize=(15,15))
 ax = sns.heatmap(dataset.corr(), annot=True)
 ```
 
-![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/heatmap_houses.jpg)
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/heatmap_houses.png)
 
 ### Gráfico de Barras
 
@@ -157,7 +157,7 @@ grafico.fit(dataset.iloc[:, 1:16].values, dataset.iloc[:, 0].values)
 grafico.show();
 ```
 
-![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/bargraph_houses.jpg)
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/bargraph_houses.png)
 
 ## Observação
 - Correlação nem sempre significa causa
