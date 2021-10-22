@@ -123,6 +123,42 @@ Também podemos calcular a partir do resultado do coeficiente de correlação, o
 
 Conforme resultado acima, interpretamos que 98% da variável dependente(y, ou seja, no caso o preço) é explicada pela variável independente(X, no caso o tamanho do imóvel).	
 
+
+## Analisando o coeficiente de correlação de forma gráfica
+
+Podemos utilizar algumas formas gráficas/visuais para analisar a força da correlação(coeficiente de correlação) entre todas as propriedades de um dataset.
+
+Abaixo temos um dataset de imóveis, onde temos as propriedades do imóvel e o seu preço.
+
+```python
+dataset.head()
+```
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/dataset_houses.jpg)
+
+### Mapa de Calor
+
+```python
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(15,15))
+ax = sns.heatmap(dataset.corr(), annot=True)
+```
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/heatmap_houses.jpg)
+
+### Gráfico de Barras
+
+```python
+!pip install yellowbrick --upgrade
+from yellowbrick.target import FeatureCorrelation
+columns = dataset.columns[1:]
+grafico = FeatureCorrelation(labels = columns)
+grafico.fit(dataset.iloc[:, 1:16].values, dataset.iloc[:, 0].values)
+grafico.show();
+```
+
+![](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/images/bargraph_houses.jpg)
+
 ## Observação
 - Correlação nem sempre significa causa
 - Printar gráfico de coisas que possuem correlação, mas que são casualidades, como o caso dos filmes do Nicolas Cage
