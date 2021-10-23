@@ -2,6 +2,7 @@
 - [Tradeoff entre viés(bias) e variância(variance)](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/tradeoff_bias_variance.md)
 - [Correlação, Covariância, Coeficiente de Correlação e Coeficiente de Determinação](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/correlacao_covariancia_coef.md)
 - Regressão Linear Simples
+- Regressão Linear Múltipla
 
 # Resumo Cursos Datascience
 
