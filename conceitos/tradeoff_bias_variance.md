@@ -58,7 +58,7 @@ Para que um modelo seja bom, ele precisa passar por otimização, o que signific
       - Adição de neurônios ou camadas(Redes Neurais)
       - Adição de mais nós(Árvores de Decisão)
       - Adição de mais features
-      - HyperParameters
+      - Ajuste HyperParameters
 
 Temos aqui um cobertor curto, pois conforme o viés é reduzido, podemos ter um aumento da variância e vice-versa.
 <br>O grande desafio aqui é calibrar ambos até o momento em que se deve parar a otimização do modelo.
