@@ -25,7 +25,7 @@ Expressão em inglês que significa escolher uma coisa em detrimento de outra, o
 ## Variância(Variance)
 - O que é Variância(Variance)?
   - É a diferença que ocorre entre a quantidade de erros/acertos sobre os dados de treinamento, versus o montante de erros/acertos sobre os dados de teste
-  - O conceito de Variância aqui sempre está relacionado aos dados de teste
+  - O conceito de Variância aqui sempre está relacionado a variabilidade, ou seja, a diferença da eficiência/acerto do modelo ENTRE dados de treinamento e dados de TESTE
 - Tipos de Variância
   - Alta Variância/High Variance
     - Quando o modelo erra muito sobre os dados de teste
