@@ -3,7 +3,7 @@
 Após o modelo estiver pronto para ir para Produção, uma das formas mais simples de usar o mesmo em produção é através de uma API.
 
 Para tanto precisamos empacotar o mesmo, o que pode ser feito através da lib python "pickle" e através de um framework web python, como por exemplo o Flask,
-podemos chamar esse modelo passando para o mesmo os dados recebidos na API.
+podemos chamar o MODELO passando para o mesmo os dados recebidos na API.
 
 Porém, devemos passar para o modelo, os dados que recebermos na API, no mesmo formato, com a mesma estrutura, com as mesmas transformações que foram realizadas sobre os dados de treinamento.
 
