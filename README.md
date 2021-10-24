@@ -3,6 +3,7 @@
 - [Correlação, Covariância, Coeficiente de Correlação e Coeficiente de Determinação](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/correlacao_covariancia_coef.md)
 - Regressão Linear Simples
 - Regressão Linear Múltipla
+- [Como fazer deploy em Produção?](https://github.com/carloshfmaciel/datascience/blob/master/conceitos/como_fazer_deploy_prod.md)
 
 # Resumo Cursos Datascience
 
